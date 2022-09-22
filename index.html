@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    
 </head>
 
-<body>
+<body onload="PlayAudio()">
+    <embed type="audio/mp3" src="../sons/welcome.mp3" volume="100" loop="False" autostart="true" id="welcome-audio" />
     <div class="frame">
-        <embed type="audio/mp3" src="../sons/welcome.mp3" volume="100" loop="true" autostart="true" />
         <div class="layer1">
             <div class="welcome-text">
                 <p id="welcome">Welcome to the</p>
@@ -24,6 +25,7 @@
         </div>
         <div class="layer2">
             <div class="ground"> </div>
+            <a href="./Home/index.html"><h1>Click Here</h1></a>
         </div>
     </div>
 </body>
