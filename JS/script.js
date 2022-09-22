@@ -9,7 +9,7 @@ let vol3 = 0;
 let vol4 = 0;
 
 setInterval(() => {
-    liq.style.height = vol + "%";
+liq.style.height = vol + "%";
     vol += 4;
     if (vol >= 96) { vol = 0 }
 }, 500)

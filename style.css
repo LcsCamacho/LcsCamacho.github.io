@@ -24,6 +24,7 @@ body {
     line-height: 1.0;
 }
 
+
 embed {
     display: none;
 }
@@ -99,7 +100,8 @@ embed {
     width: 99vw;
 }
 
-.layer2>a {
+.layer2>h1 {
+    border: 1px solid white;
     position: absolute;
     top: 50%;
     left: 40%;
