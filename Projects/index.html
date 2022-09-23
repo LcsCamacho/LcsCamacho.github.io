@@ -10,9 +10,7 @@
 </head>
 
 <body>
-    <div class="espaco">
-
-    </div>
+    <div class="espaco"></div>
     <header>
         <nav>
             <img src="../Assets/ft.jpg" alt="foto">
@@ -46,5 +44,20 @@
     </div>
 
 </body>
-<script src="./script.js"></script>
+<script>
+    let espaco = document.querySelector(".espaco");
+    let p = document.querySelector(".card");
+    let tam = 0;
+    let tam2 = -50;
+    setInterval(() => {
+        espaco.style.width = tam + "%";
+        tam += 4;
+        if (tam >= 80) { tam = 0 }
+    }, 500)
+
+    setInterval(() => {
+        p.style.transform = tam2;
+        tam2 += 4;
+    }, 500)
+</script>
 </html>

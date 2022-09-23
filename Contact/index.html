@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="espaco"></div>
+    <header>
+        <nav>
+            <img src="../Assets/ft.jpg" alt="foto">
+        </nav>
+        <nav class="text-top">
+            <h1>Lucas Almeida Camacho</h1>
+            <div class="espaco1"></div>
+            <ul>
+                <li><a href="../Home/index.html">Skills</a></li>
+                <li><a href="../Projects/index.html">Projects</a></li>
+                <li><a href="../About/index.html">About</a></li>
+                <li><a href="../Contact/index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
+<script>
+    let espaco = document.querySelector(".espaco");
+    let tam = 0;
+    setInterval(() => {
+        espaco.style.width = tam + "%";
+        tam += 4;
+        if (tam >= 80) { tam = 0 }
+    }, 500)
+</script>
 </html>

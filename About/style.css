@@ -15,10 +15,12 @@ body {
 
 /* HEADER */
 .espaco {
-    width: 98vw;
+    width: 4vw;
     height: 8vh;
+    background-color: aqua;
 
 }
+
 
 header {
     display: flex;

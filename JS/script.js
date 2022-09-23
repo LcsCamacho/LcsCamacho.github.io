@@ -10,7 +10,7 @@ let vol4 = 0;
 
 setInterval(() => {
 liq.style.height = vol + "%";
-    vol += 8;
+    vol += 9;
     if (vol >= 90) { vol = 90 }
 }, 500)
 setInterval(() => {
@@ -25,12 +25,6 @@ setInterval(() => {
 }, 500)
 setInterval(() => {
     liq4.style.height = vol4 + "%";
-    vol4 += 8;
+    vol4 += 9;
     if (vol4 >= 90) { vol4 = 89 }
 }, 500)
-
-let myaudio = document.getElementById("welcome-audio")
-
-function PlayAudio() {
-    myaudio.play();
-}

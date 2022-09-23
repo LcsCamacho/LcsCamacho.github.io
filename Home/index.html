@@ -10,9 +10,7 @@
 </head>
 
 <body>
-    <div class="espaco">
-
-    </div>
+    <div class="espaco"></div>
     <header>
         <nav>
             <img src="../Assets/ft.jpg" alt="foto">
@@ -67,5 +65,13 @@
     </section>
     <script src="../JS/script.js"></script>
 </body>
-
+<script>
+    let espaco = document.querySelector(".espaco");
+    let tam = 0;
+    setInterval(() => {
+        espaco.style.width = tam + "%";
+        tam += 4;
+        if (tam >= 80) { tam = 0 }
+    }, 500)
+</script>
 </html>
