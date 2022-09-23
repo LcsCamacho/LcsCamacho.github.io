@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -11,37 +12,72 @@ body {
     align-items: center;
 }
 
+/* HEADER */
+.espaco {
+    width: 98vw;
+    height: 8vh;
+
+}
+
 header {
+
+    display: flex;
+    align-items:
+        justify-content: center;
+    width: 60vw;
+    height: 20vh;
+}
+
+nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 10vh;
-    border: 1px solid black;
+    flex-direction: column;
 }
-header>.preenche{
-    position: absolute;
-    left: 0;
-    width: 0;
-    height:9.8vh;
-    background-color: rgb(77, 255, 0);
-}
-header>h1{
+
+h1 {
+    font-size: 2rem;
     font-weight: bold;
-    font-size: 50pt;
+    margin: 0px 0px 0px 6px;
 }
-header:hover{
-    background-color: aqua;
+
+.espaco1 {
+    margin: 5px 0px 0px 10px;
+    width: 50px;
+    height: 5px;
+    background-color: blue;
+}
+
+header>nav>ul {
+    display: flex;
 
 }
 
+header>nav>ul>li {
+    padding: 0px 10px;
+    margin: 10px 10px 0px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    border-radius: 5px;
+}
+
+header>nav>ul>li:hover {
+    background-color: gray;
+    color: aliceblue;
+    border: none;
+}
+
+header>nav>img {
+    width: 90px;
+    height: 80px;
+    border-radius: 40px;
+    padding: 0px 5px 0px 0px;
+}
+/* MAIN */
 .formata {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 70vw;
     height: 70vh;
-    border: 1px solid black;
     flex-wrap: wrap;
 }
 /* clicar e arrastar o acionador ao card para mostrar o projeto */
@@ -51,18 +87,16 @@ header:hover{
     justify-content: center;
     width: 25vw;
     height: 30vh;
-    border: 1px solid black;
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBj8zrpNOysu1oo1wQj0erxF2sgblu7sffK4wDlv4hVQ&s");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 .card>p{
     transform: rotate(-27deg);
     font-weight: bold;
-    font-size: 50pt;
-    opacity: 99;
+    font-size: 34pt;
 }
 .card:hover{
-    border: 2px dotted blue;
+    border: 2px dashed purple;
 }

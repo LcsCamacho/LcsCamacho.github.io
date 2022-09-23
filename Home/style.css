@@ -14,12 +14,11 @@ body {
 /* HEADER */
 .espaco {
     width: 99vw;
-    height: 15vh;
+    height: 8vh;
 
 }
 
 header {
-    border: 1px solid black;
     display: flex;
     align-items:
         justify-content: center;
@@ -42,7 +41,7 @@ h1 {
 .espaco1 {
     margin: 5px 0px 0px 10px;
     width: 50px;
-    height: 10px;
+    height: 5px;
     background-color: blue;
 }
 
@@ -78,17 +77,16 @@ section {
     display: flex;
     justify-content: center;
     margin: 50px 0px 50px 0px;
-    border: 1px solid blue;
+
 }
 
 .list-skills>ul {
     display: flex;
-
 }
 
 .list-skills>ul>li {
+    width: 235px;
     padding: 20px 75px;
-    font-family: fantasy;
 
 }
 
@@ -102,23 +100,22 @@ section {
 #espaco2 {
     width: 188px;
     height: 20vh;
-
 }
 
 #frasco1 {
-    padding: 40px 20px 0px 95px;
+    padding: 3% 0% 0% 6%;
 }
 
 #frasco2 {
-    padding: 40px 20px 0px 90px;
+    padding: 3% 0% 0% 6%;
 }
 
 #frasco3 {
-    padding: 40px 20px 0px 73px;
+    padding: 3% 0% 0% 4%;
 }
 
 #frasco4 {
-    padding: 40px 20px 0px 90px;
+    padding: 3% 0% 0% 7%;
 }
 
 .frasco {
