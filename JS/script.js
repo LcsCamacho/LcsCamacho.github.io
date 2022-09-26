@@ -9,22 +9,22 @@ let vol3 = 0;
 let vol4 = 0;
 
 setInterval(() => {
-liq.style.height = vol + "%";
+    liq.style.height = vol + "%";
     vol += 9;
     if (vol >= 90) { vol = 90 }
-}, 500)
+}, 300)
 setInterval(() => {
     liq2.style.height = vol2 + "%";
     vol2 += 4;
     if (vol2 >= 20) { vol2 = 20 }
-}, 500)
+}, 300)
 setInterval(() => {
     liq3.style.height = vol3 + "%";
     vol3 += 4;
     if (vol3 >= 40) { vol3 = 39 }
-}, 500)
+}, 300)
 setInterval(() => {
     liq4.style.height = vol4 + "%";
     vol4 += 9;
-    if (vol4 >= 90) { vol4 = 89 }
-}, 500)
+    if (vol4 >= 90) { vol4 = 90 }
+}, 300)
