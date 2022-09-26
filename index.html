@@ -5,36 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    </head>
-    <body>
-        <div class="frame">
-            <div class="layer1">
-                <div class="paralax">
-                    <div class="text-welcome">
-                        <p id="welcome">Welcome to the</p>
-                        <p id="portifolio">Camacho Portifólio</p>
+    <div class="espaco"></div>
+    <header>
+        <nav>
+            <img src="../Assets/ft.jpg" alt="foto">
+        </nav>
+        <nav class="text-top">
+            <h1>Lucas Almeida Camacho</h1>
+            <div class="espaco1"></div>
+            <ul>
+                <li><a href="index.html">Skills</a></li>
+                <li><a href="./Projects/index.html">Projects</a></li>
+                <li><a href="./About/index.html">About</a></li>
+                <li><a href="./Contact/index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="./Assets/01.jpg" alt="">
+        <div class="list-skills">
+            <ul>
+                <li>Front-End</li>
+                <li>Back-End</li>
+                <li>Java</li>
+                <li>Linguagem C</li>
+            </ul>
+            <ul>
+                <li id="frasco1">
+                    <div class="frasco">
+                        <img src="../Assets/frasco.png" alt="">
+                        <div id="liquido"></div>
                     </div>
-                    <div class="middle">
-
+                </li>
+                <li id="frasco2">
+                    <div class="frasco">
+                        <img src="../Assets/frasco.png" alt="">
+                        <div id="liquido2"></div>
                     </div>
-                    <div class="front"></div>
-                </div>
-
-            </div>
-            <div class="ground"> </div>
-            <div class="layer2">
-                <div class="ground"> </div>
-                <div class="ground2"> </div>
-                <a href="./Home/index.html">
-                    <h1>Click Here</h1>
-                </a>
-            </div>
+                </li>
+                <li id="frasco3">
+                    <div class="frasco">
+                        <img src="../Assets/frasco.png" alt="">
+                        <div id="liquido3"></div>
+                    </div>
+                </li>
+                <li id="frasco4">
+                    <div class="frasco">
+                        <img src="../Assets/frasco.png" alt="">
+                        <div id="liquido4"></div>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </body>
+    </section>
+    <script src="../JS/script.js"></script>
+</body>
+<script>
+    let espaco = document.querySelector(".espaco");
+    let tam = 0;
+    setInterval(() => {
+        espaco.style.width = tam + "%";
+        tam += 4;
+        if (tam >= 80) { tam = 0 }
+    }, 500)
+</script>
 
 </html>

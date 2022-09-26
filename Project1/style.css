@@ -1,0 +1,144 @@
+@font-face {
+    font-family: raleway_f;
+    src: url(../fonts/raleway-regular.woff2);
+}
+
+@font-face {
+    font-family: raleway_f;
+    src: url(../fonts/raleway-black.woff2);
+    font-weight: 900;
+}
+
+* {
+    font-family: 'Raleway_f', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    width: 100vw;
+    height: 99vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #010101;
+    font-family: raleway_f, sans-serif;
+    line-height: 1.0;
+}
+
+
+embed {
+    display: none;
+}
+
+.layer1 {
+    background: url("../Assets/layer-base.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;  
+}
+
+.parallax{
+    z-index: 101;
+}
+.middle {
+    background: url("../Assets/layer-middle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: -20px;
+    height: 100vh;
+    width: 99vw;
+    z-index: 102;
+
+}
+
+#welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    width: 25%;
+    top: 46%;
+    left: 34%;
+
+    font-size: 40px;
+    font-weight: 400;
+    color: yellow
+}
+#portifolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    width: 55%;
+    top: 53%;
+    left: 20%;
+
+    font-size: 45pt;
+    color: yellow;
+    font-weight: 400;
+    z-index: 101;
+}
+.text-welcome   {
+
+}
+
+.front {
+    background-image: url("../Assets/layer-front.png");
+
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    width: 99vw;
+    z-index: 102;
+}
+
+/* Parte de baixo */
+.layer2 {
+    background: url("../Assets/dungeon.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    position: relative;
+    height: 100vh;
+    width: 99vw;
+
+}
+
+.layer2>.ground {
+    background-image: url("../Assets/ground.png");
+
+    position: absolute;
+    top: -12%;
+    height: 20vh;
+    width: 99vw;
+    z-index: 100;
+}
+.layer2>.ground2 {
+    background-image: url("../Assets/ground.png");
+
+    position: absolute;
+    top: -10%;
+    height: 20vh;
+    width: 99vw;
+    z-index: 100;
+}
+
+.layer2>a>img {
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    width:25%;
+    height:35%;
+}
