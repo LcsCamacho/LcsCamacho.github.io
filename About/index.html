@@ -10,14 +10,12 @@
 </head>
 
 <body>
-    <div class="espaco"></div>
     <header>
         <nav>
             <img src="../Assets/ft.jpg" alt="foto">
         </nav>
         <nav class="text-top">
             <h1>Lucas Almeida Camacho</h1>
-            <div class="espaco1"></div>
             <ul>
                 <li><a href="../index.html">Skills</a></li>
                 <li><a href="../Projects/index.html">Projects</a></li>
@@ -36,13 +34,5 @@
         </div>
     </main>
 </body>
-<script>
-    let espaco = document.querySelector(".espaco");
-    let tam = 0;
-    setInterval(() => {
-        espaco.style.width = tam + "%";
-        tam += 4;
-        if (tam >= 80) { tam = 0 }
-    }, 500)
-</script>
+
 </html>

@@ -91,13 +91,16 @@ header>nav>img {
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBj8zrpNOysu1oo1wQj0erxF2sgblu7sffK4wDlv4hVQ&s");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.7;
+    opacity: 0.8;
+
 }
 .card>p{
     transform: rotate(-27deg);
     font-weight: bold;
     font-size: 34pt;
+    z-index: 200;
 }
 .card:hover{
+    box-shadow: 4px 5px 4px 4px rgb(155, 155, 155);
     border: 2px dashed purple;
 }

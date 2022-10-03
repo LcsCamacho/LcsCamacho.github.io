@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <div class="espaco"></div>
     <header>
         <nav>
             <img src="../Assets/ft.jpg" alt="foto">
@@ -29,10 +28,10 @@
     <div class="formata">
         <!-- 1 linha -->
         <div class="card">
-            <p><a href="../Project1/index.html">Em Andamento</a></p>
+            <p>In Coming</p>
         </div>
         <div class="card">
-            <p>Em Andamento</p>
+            <p>In Coming</p>
         </div>
         <!-- 2 linha -->
         <div class="card">
@@ -42,22 +41,5 @@
             <p>In Coming</p>
         </div>
     </div>
-
 </body>
-<script>
-    let espaco = document.querySelector(".espaco");
-    let p = document.querySelector(".card");
-    let tam = 0;
-    let tam2 = -50;
-    setInterval(() => {
-        espaco.style.width = tam + "%";
-        tam += 4;
-        if (tam >= 80) { tam = 0 }
-    }, 500)
-
-    setInterval(() => {
-        p.style.transform = tam2;
-        tam2 += 4;
-    }, 500)
-</script>
 </html>

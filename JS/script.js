@@ -10,21 +10,21 @@ let vol4 = 0;
 
 setInterval(() => {
     liq.style.height = vol + "%";
-    vol += 9;
-    if (vol >= 90) { vol = 90 }
+    vol += 5;
+    if (vol >= 90) { vol = 40 }
 }, 300)
 setInterval(() => {
     liq2.style.height = vol2 + "%";
-    vol2 += 4;
-    if (vol2 >= 20) { vol2 = 20 }
+    vol2 += 5;
+    if (vol2 >= 90) { vol2 = 50 }
 }, 300)
 setInterval(() => {
     liq3.style.height = vol3 + "%";
-    vol3 += 4;
-    if (vol3 >= 40) { vol3 = 39 }
+    vol3 += 5;
+    if (vol3 >= 90) { vol3 = 50 }
 }, 300)
 setInterval(() => {
     liq4.style.height = vol4 + "%";
-    vol4 += 9;
-    if (vol4 >= 90) { vol4 = 90 }
+    vol4 += 5;
+    if (vol4 >= 90) { vol4 = 50 }
 }, 300)

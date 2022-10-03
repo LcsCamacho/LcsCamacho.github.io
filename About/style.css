@@ -6,7 +6,6 @@
 }
 
 body {
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,18 +13,8 @@ body {
 }
 
 /* HEADER */
-.espaco {
-    width: 4vw;
-    height: 8vh;
-    background-color: aqua;
-
-}
-
-
 header {
     display: flex;
-    align-items:
-    justify-content: center;
     width: 60vw;
     height: 20vh;
 }
